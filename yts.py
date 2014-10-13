@@ -1,4 +1,4 @@
-#VERSION: 1.0
+#VERSION: 1.01
 #AUTHORS: Bruno Barbieri (brunorex@gmail.com)
 
 # Redistribution and use in source and binary forms, with or without
@@ -37,6 +37,7 @@ except ImportError:
 class yts(object):
     url = 'http://yts.re'
     name = 'YTS'
+    supported_categories = {'all': ''}
 
     def download_torrent(self, info):
         print(download_file(info))
